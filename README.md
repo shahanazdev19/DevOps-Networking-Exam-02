@@ -8,8 +8,8 @@ Commands are-
   sudo apt-get install iptables iproute2 net-tools iputils-ping
 Then the following steps I continued---
   1. Created a namespace in the server and a bridge- ns0 and br0
-       sudo ip netns add ns0
-       sudo ip link add br0 type bridge
+       <br/>sudo ip netns add ns0
+       <br/>sudo ip link add br0 type bridge
   3. Changed the state of both namespace and bridge from DOWN to UP
        sudo ip link set br0 up
        sudo ip addr add 192.168.0.1/16 dev br0
