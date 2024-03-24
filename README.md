@@ -24,7 +24,7 @@ Then the following steps I continued---
        <br/>&nbsp; sudo ip link set veth0 up
   9. Then assigned ip address to both namesapce side veth (ceth0) and to bridge (br0)
        <br/>&nbsp; sudo ip link set lo up
-       <br/>&nbsp; sudo ip addr add 192.168.0.2/16 dev ceth0
+       <br/>&nbsp; sudo ip netns exec ns0 ip addr add 192.168.0.2/16 dev ceth0
   11. Check the current ip addres of the server
         <br/>&nbsp; ip addr
   13.  Assigned a default gateway in the namespace ns0 to connect to the outher server from the assigned subnet mask        
